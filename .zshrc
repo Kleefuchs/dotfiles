@@ -11,15 +11,12 @@ zstyle :compinstall filename '/home/kleefuchs/.zshrc'
 autoload -Uz compinit
 
 export PS1="[%n@%m %~]$ "
-alias telmap='telnet mapscii.me'
-alias ls='eza'
-alias cat='bat'
 
-source ~/.zsh/zoxide
-
-export JAVA_HOME=/usr/lib/jvm/zulu-21
-
-export PATH=~/.config/scripts:$PATH
+source ~/.zsh/zoxide.zsh
+source ~/.zsh/silly_aliases.zsh
+source ~/.zsh/upgrade_aliases.zsh
+source ~/.zsh/java.zsh
+source ~/.zsh/scripts_path.zsh
 
 compinit
 # End of lines added by compinstall

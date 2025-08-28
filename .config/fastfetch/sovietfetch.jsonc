@@ -21,8 +21,8 @@
     "modules": [
         {
             "type": "kernel",
-            "key": " /\\rch Linux",
-            "keyColor": "magenta"
+            "key": "  Chairman  ",
+            "keyColor": "red"
         },
         {
             "type": "custom",
@@ -31,33 +31,33 @@
         },
         {
             "type": "uptime",
-            "key": "   Uptime   ",
-            "keyColor": "green"
+            "key": "Time since the revolution!",
+            "keyColor": "yellow"
         },
         {
             "type": "shell",
-            "key": "   Shell    ",
-            "keyColor": "green"
+            "key": "         Alliance         ",
+            "keyColor": "yellow"
         },
         {
             "type": "terminal",
-            "key": "   Terminal ",
-            "keyColor": "green"
+            "key": "     Central committee    ",
+            "keyColor": "yellow"
         },
         {
             "type": "terminalfont",
-            "key": "   Font     ",
-            "keyColor": "green"
+            "key": "        Aesthetics        ",
+            "keyColor": "yellow"
         },
         {
             "type": "packages",
-            "key": "   Packages ",
-            "keyColor": "green"
+            "key": "    Proletarian Houses    ",
+            "keyColor": "yellow"
         },
         {
             "type": "localip",
-            "key": "   Local IP ",
-            "keyColor": "green"
+            "key": "        Communal IP       ",
+            "keyColor": "yellow"
         },
         {
             "type": "custom",
@@ -66,37 +66,37 @@
         },
         {
             "type": "display",
-            "key": "   Display  ",
-            "keyColor": "cyan"
+            "key": "          Emblem         ",
+            "keyColor": "yellow"
         },
         {
             "type": "cpu",
-            "key": "   CPU      ",
-            "keyColor": "cyan"
+            "key": "   Central Peoples Union  ",
+            "keyColor": "yellow"
         },
         {
             "type": "gpu",
-            "key": "   GPU      ",
-            "keyColor": "cyan"
+            "key": "  Graphical Peoples Union ",
+            "keyColor": "yellow"
         },
         {
             "type": "memory",
-            "key": "   RAM      ",
-            "keyColor": "cyan"
+            "key": "      Lenin Statues       ",
+            "keyColor": "yellow"
         },
         {
             "type": "swap",
-            "key": "   SWAP     ",
-            "keyColor": "cyan"
+            "key": "  Spinning Lenin Statues  ",
+            "keyColor": "yellow"
         },
         {
             "type": "disk",
-            "key": "   Disk     ",
-            "keyColor": "cyan"
+            "key": "        Harvest           ",
+            "keyColor": "yellow"
         },
         {
             "type": "battery",
-            "key": "   Battery  ",
+            "key": "          Battery         ",
             "keyColor": "cyan"
         },
         {
