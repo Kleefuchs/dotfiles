@@ -294,6 +294,7 @@ spawn-at-startup "~/.config/scripts/swww-constant.sh"
 environment {
     DISPLAY ":0"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_STYLE_OVERRIDE "kvantum"
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -358,6 +359,9 @@ window-rule {
 window-rule {
 
     match app-id="equibop"
+    match title="porn"
+    match title="rule34"
+    match title="swastika"
 
     block-out-from "screencast"
 
@@ -397,6 +401,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+X hotkey-overlay-title="Open a file explorer: thunar" { spawn "thunar"; }
     Mod+B hotkey-overlay-title="Open a browser: zen-browser" { spawn "zen-browser"; }
     Mod+Y hotkey-overlay-title="Open a terminal with clipse running inside" { spawn "kitty" "--class" "clipse" "clipse"; }
     Mod+D hotkey-overlay-title="Run an Application: walker" { spawn "walker"; }
