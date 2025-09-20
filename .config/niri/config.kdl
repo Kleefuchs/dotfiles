@@ -359,10 +359,6 @@ window-rule {
 window-rule {
 
     match app-id="equibop"
-    match title="porn"
-    match title="rule34"
-    match title="swastika"
-
     block-out-from "screencast"
 
     // Use this instead if you want them visible on third-party screenshot tools.
