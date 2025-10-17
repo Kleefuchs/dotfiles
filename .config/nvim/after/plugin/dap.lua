@@ -63,7 +63,9 @@ local codelldb = {
     args = function()
         return mysplit(vim.fn.input('Enter program args: '), ' ')
     end,
-    cwd = '${workspaceFolder}',
+    cwd = function()
+        return ('${workspaceFolder}/' .. vim.fn.input("Enter pwd: "))
+    end,
     stopOnEntry = false,
 }
 
