@@ -69,7 +69,7 @@ input {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
-output "DP-1" {
+output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
 
@@ -100,7 +100,7 @@ output "DP-1" {
     position x=0 y=0
 }
 
-output "DVI-D-1" {
+output "HDMI-A-1" {
     // Uncomment this line to disable this output.
     // off
 
@@ -400,7 +400,7 @@ binds {
     Mod+X hotkey-overlay-title="Open a file explorer: thunar" { spawn "thunar"; }
     Mod+B hotkey-overlay-title="Open a browser: zen-browser" { spawn "zen-browser"; }
     Mod+Y hotkey-overlay-title="Open a terminal with clipse running inside" { spawn "kitty" "--class" "clipse" "clipse"; }
-    Mod+D hotkey-overlay-title="Run an Application: rofi -show drun" { spawn "rofi" "-show" "drun"; }
+    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.

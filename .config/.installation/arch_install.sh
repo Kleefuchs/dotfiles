@@ -1,6 +1,5 @@
 read -p "Enter command for installing packages like \"yay -S \":" pkg_manage_install
 
-$pkg_manage_install waybar dunst playerctl pavucontrol hyprpaper swww hyprshot hyprlock hyprswitch wpctl wl-kbptr wlrctl hyfetch zen-browser-bin mission-center brave-bin xfce4-thunar kitty hyprpolkitagent xdg-desktop-portal-hyprland brightnessctl wl-kbptr clipse-bin calc hyfetch hyprland neovim waybar-mpris-git cmake make jsonc yt-dlp kdeconnect adwaita-fonts adwaita-cursors adwaita-icon-theme adwaita-icon-theme-legacy libadwaita cmus swaylock ttf-jetbrains-mono-nerd wl-clipboard wshowkeys-mao-git nvidia_oc wireplumber walker-bin clipse-bin zoxide zsh wayshowkeys-mao-git
+$pkg_manage_install waybar dunst playerctl pavucontrol swww wpctl hyfetch zen-browser-bin mission-center xfce4-thunar kitty brightnessctl clipse-bin calc hyfetch neovim cmake make jsonc yt-dlp kdeconnect adwaita-fonts adwaita-cursors adwaita-icon-theme adwaita-icon-theme-legacy libadwaita swaylock ttf-jetbrains-mono-nerd wl-clipboard wireplumber clipse-bin zoxide zsh fuzzel adw-gtk-theme
 
 bash install_waybar_scrolling_mpris.sh
-bash install_hyprswitcher.sh
