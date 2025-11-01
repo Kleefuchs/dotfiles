@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-nvim-dap").setup({
-    ensure_installed = { "codelldb", "lldb", "java-debug-adapter", "netocoredbg" },
+    ensure_installed = { "codelldb", "lldb", "java-debug-adapter", "netocoredbg", 'java-test' },
     automatic_installation = true,
     handlers = {},
 })

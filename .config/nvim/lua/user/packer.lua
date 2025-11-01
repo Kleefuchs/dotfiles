@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
     use {
@@ -53,7 +53,7 @@ return require('packer').startup(function(use)
         end,
     }
 
-    use ({
+    use({
         "mhinz/vim-signify",
     })
 
@@ -64,11 +64,8 @@ return require('packer').startup(function(use)
     use {
         "williamboman/mason.nvim",
         ensure_installed = {
-            'html-lsp',
             'typescript-language-server',
             'emmet-language-server',
-            'java-test',
-            'jdtls',
         }
     }
 
@@ -79,19 +76,19 @@ return require('packer').startup(function(use)
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'neovim/nvim-lspconfig' },
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-nvim-lua' },
 
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
         }
     }
 
@@ -106,13 +103,13 @@ return require('packer').startup(function(use)
     use {
         'mfussenegger/nvim-dap',
         requires = {
-            {'williamboman/mason.nvim'},
-            {'jay-babu/mason-nvim-dap.nvim'},
-            {'theHamsta/nvim-dap-virtual-text'},
-            {'nvim-neotest/nvim-nio'},
-            {'rcarriga/nvim-dap-ui'},
-            {'jonathan-elize/dap-info.nvim'},
-            {'Weissle/persistent-breakpoints.nvim'},
+            { 'williamboman/mason.nvim' },
+            { 'jay-babu/mason-nvim-dap.nvim' },
+            { 'theHamsta/nvim-dap-virtual-text' },
+            { 'nvim-neotest/nvim-nio' },
+            { 'rcarriga/nvim-dap-ui' },
+            { 'jonathan-elize/dap-info.nvim' },
+            { 'Weissle/persistent-breakpoints.nvim' },
         },
     }
 
@@ -132,11 +129,11 @@ return require('packer').startup(function(use)
         end,
     })
 
-    use ({
+    use({
         "famiu/feline.nvim"
     })
 
-    use ({
+    use({
         "nvim-tree/nvim-web-devicons"
     })
 
@@ -148,7 +145,7 @@ return require('packer').startup(function(use)
         end,
     }
 
-    use ({
+    use({
         "MunifTanjim/prettier.nvim",
     })
 
@@ -159,14 +156,14 @@ return require('packer').startup(function(use)
         end,
     }
 
-    use ({
+    use({
         "echasnovski/mini.hipatterns",
         "echasnovski/mini.jump",
         "echasnovski/mini.cursorword",
         "echasnovski/mini.clue",
     })
 
-    use ({
+    use({
         "ntpeters/vim-better-whitespace",
     })
 
@@ -192,7 +189,7 @@ return require('packer').startup(function(use)
         end,
     }
 
-    use ({
+    use({
         "jbyuki/instant.nvim",
     })
 
@@ -217,10 +214,8 @@ return require('packer').startup(function(use)
         end,
     }
 
-    use ({
+    use({
         "rebelot/kanagawa.nvim",
         as = 'kanagawa',
     })
-
-
 end)

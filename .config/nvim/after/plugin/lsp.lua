@@ -10,13 +10,9 @@ require('mason-lspconfig').setup({
     ensure_installed = {
         'lua_ls',
         'rust_analyzer',
+        'jdtls',
         'clangd',
-        'html',
-        'jsonls',
         'eslint',
-        'ts_ls',
-        'asm_lsp',
-        'jsonls',
         'omnisharp',
     },
 
@@ -36,8 +32,8 @@ local omnisharp_server_location = os.getenv('OMNISHARP_LANGUAGE_SERVER')
 require('lspconfig').omnisharp.setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    cmd = { omnisharp_server_location, "--languageserver" , "--hostPID", tostring(pid) },
- })
+    cmd = { omnisharp_server_location, "--languageserver", "--hostPID", tostring(pid) },
+})
 
 
 -- Add cmp_nvim_lsp capabilities settings to lspconfig
