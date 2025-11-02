@@ -286,16 +286,9 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar" "-c" ".config/waybar/niri2.jsonc"
-spawn-at-startup "xwayland-satellite"
 spawn-at-startup "clipse" "-listen"
-spawn-at-startup "~/.config/scripts/swww-change.sh"
+spawn-at-startup "~/.config/scripts/swww-constant.sh"
 // spawn-at-startup "~/.config/scripts/swww-change.sh"
-
-environment {
-    DISPLAY ":0"
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
-    QT_STYLE_OVERRIDE "kvantum"
-}
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
