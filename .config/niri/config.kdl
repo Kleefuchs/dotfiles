@@ -448,6 +448,7 @@ binds {
 
     Mod+XF86RFKill allow-when-locked=true { spawn "rfkill" "toggle" "all"; }
 
+    Mod+Shift+Alt+Ctrl+B allow-when-locked=true { spawn "espeak-ng" "-v" "gmq/sv" "Blåhaj"; }
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
