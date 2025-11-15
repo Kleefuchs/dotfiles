@@ -187,7 +187,10 @@ layout {
     }
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
-    // preset-window-heights { }
+    preset-window-heights {
+        proportion 0.5
+        proportion 1.0
+    }
 
     // You can change the default width of the new windows.
     default-column-width { proportion 1.0; }
@@ -315,8 +318,8 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar" "-c" ".config/waybar/niri2.jsonc"
 spawn-at-startup "clipse" "-listen"
-// spawn-at-startup "~/.config/scripts/swww-constant.sh"
-spawn-at-startup "~/.config/scripts/swww-change.sh"
+spawn-at-startup "~/.config/scripts/swww-constant.sh"
+// spawn-at-startup "~/.config/scripts/swww-change.sh"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -442,6 +445,8 @@ binds {
 
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "s" "+1%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "s" "1%-"; }
+
+    Mod+XF86RFKill allow-when-locked=true { spawn "rfkill" "toggle" "all"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
