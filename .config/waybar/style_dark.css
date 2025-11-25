@@ -11,8 +11,8 @@ window#waybar {
   transition-duration: 0.5s;
   /* background-color: #1e1e2e; */
   /* background-color: #181825; */
-  background-color: rgba(200,50, 200, 0.15);
-  border-bottom: 2px rgba(200, 50, 200, 0.3) solid;
+  background-color: rgba(50 ,50, 50, 1);
+  border-bottom: 2px rgba(255, 75, 0, 1) solid;
   /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
@@ -21,44 +21,42 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */
-  background-color: rgba(200, 50, 200, 0.35);
+  background-color: rgba(255, 75, 0, 0.35);
   color: white;
 }
 
 #workspaces button:hover {
   color: white;
-  background-color: rgba(200, 50, 200, 0.75);
+  background-color: rgba(255, 75, 0, 0.75);
 }
 
 #workspaces button.active {
-  background-color: rgba(200,50, 200, 1.0);
+  background-color: rgba(255 ,75, 0, 1.0);
   color: white;
 }
 
 #workspaces button.urgent {
-  background-color: rgba(250, 50, 150, 0.85);
+  background-color: rgba(255, 100, 0, 0.85);
   color: white;
 }
 
 #custom-waybar-scrolling-mpris {
     color: white;
-    background-color: rgba(200, 50, 200, 0.35);
+    background-color: rgba(255, 75, 0, 1);
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15px;
 }
 
 #custom-cava {
-    color: white;
-    background-color: rgba(200, 50, 200, 0.35);
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 15px;
+    color: rgba(115, 41, 130, 1);
 }
 
 #battery {
     color: white;
-    background-color: rgba(200, 50, 200, 0.35);
+    background-color: rgba(255, 75, 0, 1);
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15px;
@@ -77,34 +75,32 @@ window#waybar {
 #window,
 
 window#waybar.empty #window {
-  background-color: rgba(200, 50, 200, 0.35);
-  border-radius: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #cpu {
-  color: rgba(75, 235, 75, 0.8);
+  color: rgba(228, 3, 3, 1);
 }
 
 #memory {
-  color: rgba(250, 190, 190, 0.8);
+  color: rgba(255, 140, 0, 1);
 }
 
 #pulseaudio {
-  color: rgba(120, 120, 255, 0.8);
+  color: rgba(255, 237, 0, 1);
 }
 
 #pulseaudio.muted {
-  color: rgba(30, 30, 90, 0.25);
+  color: rgba(255, 237, 0, 0.25);
 }
 
 #clock {
-  color: rgba(200, 250, 50, 0.8);
+  color: rgba(0, 128, 38, 1);
 }
 
 #clock.simpleclock {
-  color: rgba(250, 200, 50, 0.8);
+  color: rgba(0, 76, 255, 1);
 }
 
 #window {
@@ -114,10 +110,6 @@ window#waybar.empty #window {
 
 #custom-logo {
   color: #89b4fa;
-}
-
-#custom-power {
-  color: rgba(255, 50, 50, 0.8);
 }
 
 tooltip {

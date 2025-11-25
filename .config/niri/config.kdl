@@ -317,7 +317,7 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar" "-c" ".config/waybar/niri2.jsonc"
+spawn-at-startup "waybar" "-c" ".config/waybar/niri.jsonc" "-s" ".config/waybar/style_dark.css"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "clipse" "-listen"
 spawn-at-startup "~/.config/scripts/swww-constant.sh"

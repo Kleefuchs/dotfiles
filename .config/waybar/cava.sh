@@ -15,7 +15,7 @@ done
 config_file="/tmp/waybar-cava-config"
 echo "
 [general]
-bars = 20
+bars = 10
 
 [output]
 method = raw

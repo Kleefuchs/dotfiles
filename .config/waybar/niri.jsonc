@@ -20,9 +20,8 @@
         "pulseaudio",
         "clock",
         "clock#simpleclock",
+        "custom/cava",
         "tray",
-        "custom/notification",
-        "custom/power",
     ],
     "custom/cava": {
         "format": "{}",
@@ -38,16 +37,6 @@
             "Stopped": "■",
         },
         "length": 40,
-    },
-    "hyprland/workspaces": {
-        "on-click": "activate",
-        "format": "{id}",
-        "all-outputs": false,
-        "disable-scroll": false,
-        "active-only": false,
-    },
-    "hyprland/window": {
-        "format": "{title}",
     },
     "tray": {
         "show-passive-items": true,
@@ -110,24 +99,6 @@
     },
     "custom/sep": {
         "format": "|",
-        "tooltip": false,
-    },
-    "custom/power": {
-        "tooltip": false,
-        "on-click": "wleave -p layer-shell &",
-        "format": "⏻",
-    },
-    "custom/notification": {
-        "escape": true,
-        "exec": "swaync-client -swb",
-        "exec-if": "which swaync-client",
-        "format": "{icon}",
-        "format-icons": {
-            "none": "󰅺",
-            "notification": "󰡟",
-        },
-        "on-click": "sleep 0.1 && swaync-client -t -sw",
-        "return-type": "json",
         "tooltip": false,
     },
 }
