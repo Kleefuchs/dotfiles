@@ -32,7 +32,8 @@ bold_font          auto
 italic_font        auto
 bold_italic_font   auto
 font_size 14.0
-# url_color #0087bd
+
+url_color #0087bd
 url_style curly
 url_prefixes file ftp ftps gemini git gopher http https irc ircs kitty mailto news sftp ssh
 detect_urls yes
@@ -91,35 +92,30 @@ map ctrl+shift+w close_tab
 enable_audio_bell yes
 
 #: The color table {{{
-# color0  #2D3241
-# color8  #3B4358
+
+color0  #2D3241
+color8  #3B4358
 #: black
-# color1  #B14A56
-# color9  #B14A56
+color1  #B14A56
+color9  #B14A56
 #: red
-# color2  #92B477
-# color10 #92B477
+color2  #92B477
+color10 #92B477
 #: green
-# color3  #E6C274
-# color11 #E6C274
+color3  #E6C274
+color11 #E6C274
 #: yellow
-# color4  #6D8EB5
-# color12 #6D8EB5
+color4  #6D8EB5
+color12 #6D8EB5
 #: blue
-# color5  #A5789E
-# color13 #A5789E
+color5  #A5789E
+color13 #A5789E
 #: magenta
-# color6  #75B3C7
-# color14 #7CAFAD
+color6  #75B3C7
+color14 #7CAFAD
 #: cyan
-# color7  #DFE3ED
-# color15 #E7EBF1
+color7  #DFE3ED
+color15 #E7EBF1
 #: white
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Bright Lights
-include current-theme.conf
-# END_KITTY_THEME
