@@ -319,6 +319,7 @@ layout {
 spawn-at-startup "waybar" "-c" ".config/waybar/niri2.jsonc"
 spawn-at-startup "clipse" "-listen"
 spawn-at-startup "~/.config/scripts/swww-constant.sh"
+spawn-at-startup "dunst"
 // spawn-at-startup "~/.config/scripts/swww-change.sh"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
