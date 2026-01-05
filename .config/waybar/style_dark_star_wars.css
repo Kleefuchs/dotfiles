@@ -1,0 +1,137 @@
+* {
+    min-height: 0;
+    min-width: 0;
+    font-family: Lexend, "JetBrainsMono NFP";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+window#waybar {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    /* background-color: #1e1e2e; */
+    /* background-color: #181825; */
+    background-color: rgba(10 ,10, 10, 0);
+    /* background-color: rgba(24, 24, 37, 0.6); */
+}
+
+#workspaces button {
+    padding: 0.3rem 0.6rem;
+    margin: 0.4rem 0.25rem;
+    border-radius: 6px;
+    background-color: rgba(245, 245, 245, 1);
+    color: black;
+}
+
+#workspaces button:hover {
+    color: black;
+    background-color: rgba(100, 255, 100, 1);
+}
+
+#workspaces button.active {
+    background-color: rgba(255 ,10, 10, 1);
+    color: white;
+}
+
+#workspaces button.urgent {
+    background-color: rgba(255, 10, 10, 0.7);
+    color: white;
+}
+
+#custom-waybar-scrolling-mpris {
+    color: black;
+    background-color: rgba(245, 245, 245, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+#custom-cava {
+    border: 3px rgba(115, 41, 130, 1) solid;
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#battery {
+    color: black;
+    background-color: rgba(245, 245, 245, 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-mpris,
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+
+window#waybar.empty #window {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#cpu {
+    border: 3px rgba(228, 3, 3, 1) solid;
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    color: black;
+}
+
+#memory {
+    border: 3px rgba(255, 140, 0, 1) solid;
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    color: black;
+}
+
+#pulseaudio {
+    border: 3px rgba(255, 237, 0, 1) solid;
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#pulseaudio.muted {
+    border: 3px rgba(255, 237, 0, 0.25) solid;
+    background-color: rgba(245,245,245,0.25);
+    border-radius: 15px;
+    color: rgba(0,0,0,0.25);
+}
+
+#clock {
+    border: 3px rgba(0, 128, 38, 1) solid;
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    color: black;
+}
+
+#clock.simpleclock {
+    border: 3px rgba(0, 76, 255, 1) solid;
+    background-color: rgba(245,245,245,1);
+    border-radius: 15px;
+    color: black;
+}
+
+#window {
+    color: #cdd6f4;
+}
+
+
+#custom-logo {
+    color: #89b4fa;
+}
+
+tooltip {
+    background-color: #181825;
+    border: 2px solid #89b4fa;
+}
