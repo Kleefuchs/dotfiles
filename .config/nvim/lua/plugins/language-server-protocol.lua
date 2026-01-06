@@ -27,6 +27,7 @@ return {
                 'jdtls',
                 'clangd',
                 'eslint',
+                'arduino_language_server'
             },
 
             handlers = {
