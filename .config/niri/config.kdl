@@ -14,10 +14,7 @@ input {
 
             // For example:
             layout "de,us"
-<<<<<<< HEAD
-=======
             // variant "e1,"
->>>>>>> a5eca040c8b57a859433e5101212724df9d81754
             // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
         }
 
