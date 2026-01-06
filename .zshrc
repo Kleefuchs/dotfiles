@@ -18,6 +18,7 @@ source ~/.zsh/upgrade_aliases.zsh
 source ~/.zsh/java.zsh
 source ~/.zsh/scripts_path.zsh
 source ~/.zsh/nvm.zsh
+source ~/.zsh/xdg.zsh
 
 export SUDO_EDITOR="nvim"
 export EDITOR="nvim"
