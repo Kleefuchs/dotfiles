@@ -27,18 +27,29 @@ return {
                 'jdtls',
                 'clangd',
                 'eslint',
-                'arduino_language_server'
             },
 
             handlers = {
                 function(server_name)
-                    require('lspconfig')[server_name].setup({
+                    local lspconfig = require('lspconfig')
+                    lspconfig[server_name].setup({
                         on_attach = on_attach,
                         capabilities = capabilities,
                     })
                 end,
             },
         })
+
+        vim.lsp.config('arduino_language_server', {
+            cmd = { "arduino-language-server" },
+            filetypes = { "arduino", "cpp"},
+            on_attach = function ()
+                vim.lsp.enable('clangd', false)
+            end,
+            capabilities = capabilities
+        })
+        vim.lsp.enable('arduino_language_server')
+
         -- Add cmp_nvim_lsp capabilities settings to lspconfig
         -- This should be executed before you configure any language server
         local lspconfig_defaults = require('lspconfig').util.default_config
@@ -100,7 +111,5 @@ return {
                 vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
             end,
         })
-
-
     end
 }
